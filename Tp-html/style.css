@@ -1,0 +1,117 @@
+*{
+    margin:1em;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+h1{
+    color:rgb(65, 233, 65);
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+}
+h2{
+    color:rgb(233, 16, 150);
+    font-weight:bold;
+}
+.container{
+
+    display:flex;
+    margin:2em;
+}
+.responsive-table {
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid  black;
+  
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+th{
+    color:red;
+}
+td{
+    color:black;
+}
+.style-paragraphe1{
+    margin-right:20px;
+
+}
+.style-paragraphe2{
+
+   margin_left:20px;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+.color-text{
+    color:red;
+    font-weight: bold;
+}
+
+/*responsive*/
+@media screen and (max-width: 1024px) {
+    
+    img{
+        width: 750px;
+        
+    }
+    .style-paragraphe1{
+        justify-content: center;
+    }
+    .container{
+        justify-content: center;
+        display: block;
+    }
+    body{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 834px) and (min-width: 401px){
+    
+    img{
+        width: 300px;
+        
+    }
+    .style-paragraphe1{
+        justify-content: center;
+    }
+    .container{
+        justify-content: center;
+        display: block;
+    }
+ .style-table{
+    
+ }
+    
+}
+
+@media screen and (max-width: 400px) {
+    
+    img{
+        width: 220px;
+        
+    }
+    .style-paragraphe1{
+        justify-content: center;
+    }
+    .container{
+        justify-content: center;
+        display: block;
+    }
+    body{
+        font-size: 15px;
+    }
+    
+}

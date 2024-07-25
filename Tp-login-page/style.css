@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+   
+    }
+    .login-container {
+    background-color:rgb(230, 189, 219);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    }
+
+    h2 {
+   
+    color: #333;
+    font-size: 24px;
+    justify-content: center;
+    margin:0 auto;
+    padding:16px;
+    }
+
+
+    .form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 2px;
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+   .form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+
+/* Style pour le bouton de connexion */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ac4569;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style pour le lien de mot de passe oublié */
+.forgot-password {
+    margin-top: 10px;
+    display: block;
+    color:#555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Responsive page*/
+@media (max-width:400px) {
+    body{
+        font-size: 14px;
+        display: block;
+        width:300px;
+    }
+
+}
