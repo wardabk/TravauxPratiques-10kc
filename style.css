@@ -1,46 +1,111 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-.nav-bar {
-    background-color: #0d21a1;
-    padding: 10px;
+nav {
+    background-color:  #079a9d;
+    padding: 10px 0;
     border: 2px solid black;
-    width:600px;
-    margin:0 auto;
     border-radius: 20px;
+    margin:20px auto;
+    width:800px;
+
 }
 
-ul {
+ nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content:center;
+   
 }
 
-li {
+ nav ul li {
     margin: 0 15px;
+    
 }
 
- .nav-bar a {
+  nav ul li a {
     padding: 10px 20px;
     display: block;
     color:white;
     text-align: center;
     text-decoration: none;
-   
+    
    
 }
 
- .nav-bar a:hover {
-    background-color:rgb(80, 215, 80);
-    text-decoration: underline;
+ nav ul li a:hover {
+    background-color: #cea655;
+    text-decoration:none;
    
 }
 
 .title {
     text-align: center;
-    margin-top: 20px;
+    padding:20px;
+    margin:0;
     color:rgb(11, 11, 122);
 }
+
+
+/* style pour la section */
+section{
+    
+    margin-top:60px;
+}
+section ul li {
+    
+    background-color: rgb(217, 237, 237);
+    list-style-type:none;
+    font-size: 40px;
+    padding: 15px;
+    margin:10px;
+    border:2px solid black;   
+}
+
+section ul li a {
+   
+    text-decoration: none;
+    color:rgb(11, 11, 122) ;
+    font-weight: 700;
+}
+
+section ul li a:hover {
+    text-decoration:underline;
+    
+}
+
+/* Styles pour le footer */
+footer {
+    background-color:rgb(169, 163, 163);
+    color: #fff;
+    text-align: center;
+    padding:5px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    
+}
+
+footer p{
+    letter-spacing: 1px;
+}
+
+footer img {
+    width:50px;
+    height:50px;
+    padding: 10px;
+}
+
+ footer .pied{
+    display:flex;
+    justify-content: center;
+ }
