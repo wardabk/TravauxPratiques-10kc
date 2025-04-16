@@ -3,31 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin: 0;
-  padding: 0;
   line-height: 1.6;
   background-color: #f4f4f4;
+  padding-bottom: 100px; 
+  
 }
-/******styliser le menu de nav ******/
+
+/****** Menu de navigation ******/
 nav {
   background-color: #079a9d;
   padding: 10px 0;
   border: 2px solid black;
   border-radius: 20px;
   margin: 20px auto;
-  width: 800px;
+  max-width: 1000px;
+  width: 90%;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 nav ul li a {
@@ -36,31 +37,42 @@ nav ul li a {
   color: white;
   text-align: center;
   text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
   background-color: #cea655;
-  text-decoration: none;
 }
 
+/****** Titre ******/
 .title {
   text-align: center;
   padding: 20px;
-  margin: 0;
   color: rgb(11, 11, 122);
+  font-size: 2rem;
 }
 
-/* style pour la section */
+/****** Section principale ******/
 section {
-  margin-top: 60px;
+  margin: 60px auto;
+  max-width: 900px;
+  padding: 0 20px;
 }
+
+section ul {
+  padding: 0;
+}
+
 section ul li {
   background-color: rgb(217, 237, 237);
   list-style-type: none;
-  font-size: 40px;
+  font-size: 2rem;
   padding: 15px;
-  margin: 10px;
-  border: 2px solid black;
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 
 section ul li a {
@@ -73,28 +85,88 @@ section ul li a:hover {
   text-decoration: underline;
 }
 
-/* Styles pour le footer */
+/****** Footer ******/
 footer {
   background-color: rgb(169, 163, 163);
   color: #fff;
   text-align: center;
-  padding: 5px;
+  padding: 15px 0;
   width: 100%;
-  bottom: 0;
   position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 footer p {
   letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 footer img {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
+  width: 40px;
+  height: 40px;
 }
 
 footer .pied {
   display: flex;
   justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/****** Responsive Tablette ******/
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.7rem;
+  }
+
+  nav ul li a {
+    padding: 8px 15px;
+    font-size: 0.95rem;
+  }
+
+  section ul li {
+    font-size: 1.5rem;
+    padding: 12px;
+  }
+
+  footer img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/****** Responsive Téléphone ******/
+@media screen and (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    padding: 15px;
+  }
+
+  section {
+    padding: 0 10px;
+  }
+
+  section ul li {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  footer img {
+    width: 30px;
+    height: 30px;
+  }
 }
